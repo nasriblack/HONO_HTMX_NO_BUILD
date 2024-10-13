@@ -24,7 +24,7 @@ export const AppLayout = ({title, content}: {
             <body>
                 <nav class="navbar">
                     <a href="/"> dashboard</a>
-                    <a href="/profile"> Profile</a>
+                    <a href="/app/profile"> Profile</a>
                     <a href="/auth/logout"> logout</a>
                 </nav>
                 ${content}
