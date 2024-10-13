@@ -1,11 +1,13 @@
 import { Hono } from 'hono'
 
 import  dashboard  from  './app/index.ts'
+import { Layout } from "../views/Layout.ts";
+import Landing from "../views/pages/Landing.ts";
 
 const app = new Hono()
 
 app.get('/', (c)=> {
-    return c.text('Hello Lnqding Page!')
+    return c.html(Layout({title:'Landing', content:Landing()}))
 });
 
 
